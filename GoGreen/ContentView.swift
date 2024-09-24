@@ -16,13 +16,20 @@ struct ContentView: View {
       
     ])
     var body: some View {
-        ZStack {
-            
+        ZStack(alignment: .center, content: {
             LinearGradient(gradient: gradientCwSStyle, startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea()
-            Text("Hi ")
+            VStack (alignment: .center,spacing: 100) {
+                Image(uiImage: .leaf).scaledToFit().frame(width: 50, height: 50)
+                HStack {
+                    Text("GLOW").font(.largeTitle).foregroundStyle(.lightGrey)
+        }
+            
+       
         }
     }
+               )
 }
+               }
 
 #Preview {
     ContentView()
