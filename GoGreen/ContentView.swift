@@ -20,8 +20,9 @@ struct ContentView: View {
             LinearGradient(gradient: gradientCwSStyle, startPoint: .topLeading, endPoint: .bottomTrailing).ignoresSafeArea()
             VStack (alignment: .center,spacing: 100) {
                 Image(uiImage: .leaf).scaledToFit().frame(width: 50, height: 50)
-                HStack {
-                    Text("GLOW").font(.largeTitle).foregroundStyle(.lightGrey)
+                HStack(spacing: 0) {
+                    Text("GLOW").font(.largeTitle).fontWeight(.bold) .foregroundStyle(.lightGrey)
+                    Text("GREEN").font(.largeTitle).fontWeight(.bold).foregroundStyle(.appGreen)
         }
             
        
