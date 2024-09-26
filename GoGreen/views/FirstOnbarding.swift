@@ -11,10 +11,16 @@ struct FirstOnbarding: View {
     var body: some View {
       
             ZStack {
-                Image(.bg).resizable().scaledToFill().shadow(color:.appGreen.opacity(0.9)  ,radius: 0.2,x: 10,y: 10).ignoresSafeArea()
+                Image(.bg).resizable().scaledToFill().frame(maxWidth: .infinity, maxHeight: .infinity).ignoresSafeArea()
+                Rectangle()
+                    .fill(.lightGreen.opacity(0.2))
+                    .frame(maxWidth: .infinity,maxHeight: .infinity).ignoresSafeArea()
+                   
+                    .blendMode(.multiply)
+                
                 VStack(alignment: .leading) {
-                    Text("Welcome Back").bold().font(.title).foregroundStyle(.appGreen).frame(maxWidth: .infinity,alignment: .leading).padding(.horizontal)
-                    Text("we’re glad that that you are here..!!").italic().font(.system(size: 20)).foregroundStyle(.appGreen).frame(maxWidth: .infinity,alignment: .leading).padding(.horizontal).padding(.vertical,0.1)
+                    Text("Welcome Back").bold().font(.title).foregroundStyle(.appGreen).frame(maxWidth: .infinity, alignment: .leading).padding(.horizontal)
+                    Text("we’re glad that that you are here..!!").italic().font(.system(size: 25)).foregroundStyle(.appGreen).frame(maxWidth: .infinity,alignment: .leading).padding(.horizontal).padding(.vertical,0.1)
                     Spacer()
                     Button {
                         

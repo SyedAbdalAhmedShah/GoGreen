@@ -13,7 +13,7 @@ struct ContentView: View {
         Color(.darkGreen),
         Color(.lightGreen),
         
-      
+        
     ])
     var body: some View {
         ZStack(alignment: .center, content: {
@@ -23,12 +23,17 @@ struct ContentView: View {
                 HStack(spacing: 0) {
                     Text("GLOW").font(.largeTitle).fontWeight(.bold) .foregroundStyle(.lightGrey)
                     Text("GREEN").font(.largeTitle).fontWeight(.bold).foregroundStyle(.appGreen)
-        }
-        }
-    }      )
+                }
+            }
+        }      )
+    }
 }
-               }
+
+
 
 #Preview {
     ContentView()
 }
+
+
+
