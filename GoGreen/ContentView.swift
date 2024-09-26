@@ -24,11 +24,8 @@ struct ContentView: View {
                     Text("GLOW").font(.largeTitle).fontWeight(.bold) .foregroundStyle(.lightGrey)
                     Text("GREEN").font(.largeTitle).fontWeight(.bold).foregroundStyle(.appGreen)
         }
-            
-       
         }
-    }
-               )
+    }      )
 }
                }
 
