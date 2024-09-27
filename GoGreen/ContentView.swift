@@ -29,11 +29,19 @@ struct ContentView: View {
     }
 }
 
+struct OnBardingView: View {
+    var body: some View {
+        TabView {
+            ContentView()
+            FirstOnbarding()
+            
+        }.ignoresSafeArea().tabViewStyle(.page(indexDisplayMode: .always))
+    }
+}
 
 
 #Preview {
-    ContentView()
+    OnBardingView()
 }
-
 
 

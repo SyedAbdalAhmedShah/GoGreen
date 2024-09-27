@@ -22,12 +22,7 @@ struct FirstOnbarding: View {
                     Text("Welcome Back").bold().font(.title).foregroundStyle(.appGreen).frame(maxWidth: .infinity, alignment: .leading).padding(.horizontal)
                     Text("we’re glad that that you are here..!!").italic().font(.system(size: 25)).foregroundStyle(.appGreen).frame(maxWidth: .infinity,alignment: .leading).padding(.horizontal).padding(.vertical,0.1)
                     Spacer()
-                    Button {
-                        
-                    } label: {
-                        Text("Lets Get Started").bold().foregroundStyle(.white).frame(width: 200,height: 50,alignment: .center)
-                            .background(.darkGreen).clipShape(.rect(cornerRadius:10))
-                    }.frame(maxWidth: .infinity)
+                    PrimryButton(title: "Lets Get Started ")
                 }.padding(.vertical,50)
         }
     }
@@ -35,4 +30,20 @@ struct FirstOnbarding: View {
 
 #Preview {
     FirstOnbarding()
+}
+
+
+struct PrimryButton: View {
+    
+    let title: String
+    
+    var body: some View {
+        
+        Button {
+            
+        } label: {
+            Text(title).bold().foregroundStyle(.white).frame(width: 200,height: 50,alignment: .center)
+                .background(.darkGreen).clipShape(.rect(cornerRadius:10))
+        }.frame(maxWidth: .infinity)
+    }
 }

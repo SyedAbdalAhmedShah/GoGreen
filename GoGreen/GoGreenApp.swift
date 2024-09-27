@@ -11,7 +11,7 @@ import SwiftUI
 struct GoGreenApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            OnBardingView()
         }
     }
 }
