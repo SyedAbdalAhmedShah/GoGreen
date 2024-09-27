@@ -43,7 +43,7 @@ struct PrimryButton: View {
             
         } label: {
             Text(title).bold().foregroundStyle(.white).frame(width: 200,height: 50,alignment: .center)
-                .background(.darkGreen).clipShape(.rect(cornerRadius:10))
+                .background(.middleGreen).clipShape(.rect(cornerRadius:10))
         }.frame(maxWidth: .infinity)
     }
 }
